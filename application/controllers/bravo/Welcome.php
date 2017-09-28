@@ -10,11 +10,11 @@ class Welcome extends Application
 	}
 
 	/**
-	 * Homepage for our app
-	 */
+	 * Homepage for our apps
 	public function index()
 	{
-		// this is the view we want shown
+		/*
+                // this is the view we want shown
 		$this->data['pagebody'] = 'homepage';
 
 		// build the list of authors, to pass on to our view
@@ -24,6 +24,8 @@ class Welcome extends Application
 		$this->data['authors'] = $source;
 
 		$this->render();
+                */
+            $this->show(2);
 	}
 
 }
