@@ -9,8 +9,7 @@ class Welcome extends Application
 		parent::__construct();
 	}
 
-	/**
-	 * Homepage for our apps
+	//Homepage for our apps
 	public function index()
 	{
 		/*
