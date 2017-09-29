@@ -17,3 +17,6 @@ application/logs/*
 /vendor/
 /nbproject/private/
 /nbproject/
+
+# ignore metadata of IDE
+.metadata
