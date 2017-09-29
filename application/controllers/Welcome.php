@@ -19,4 +19,7 @@ class Welcome extends Application
 		$this->data['authors'] = $source;
 		$this->render();
 	}
+        public function show($key) {
+            parent::show($key);
+        }
 }
