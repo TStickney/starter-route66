@@ -56,3 +56,11 @@ $route['foxtrot'] = 'tango';
 $route['show/(:any)'] = 'welcome/show/$1';
 $route['i/(.*)'] = 'golf';
 
+/* 
+ * Remaps any requests for 'banana' within the first parameter and must have 
+ * something in the second parameter.
+*/
+$route['(.*)banana(.*)/(.*)'] = function($fruit, $verb) {
+    return 'golf';
+};
+
