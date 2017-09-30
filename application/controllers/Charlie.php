@@ -1,11 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Welcome extends Application
+
+class Charlie extends Application
 {
+
 	function __construct()
 	{
 		parent::__construct();
 	}
+
 	/**
 	 * Homepage for our app
 	 */
@@ -13,13 +16,19 @@ class Welcome extends Application
 	{
 		// this is the view we want shown
 		$this->data['pagebody'] = 'homepage';
+
 		// build the list of authors, to pass on to our view
 		$source = $this->quotes->all();
+
 		// pass on the data to present, as the "authors" view parameter
 		$this->data['authors'] = $source;
+
 		$this->render();
 	}
-        public function show($key) {
-            parent::show($key);
+        
+        public function brown()
+        {
+                $this->show(3);
         }
+
 }
